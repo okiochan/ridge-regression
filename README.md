@@ -28,3 +28,5 @@ Cov2 = Cov + c * np.eye(n)
 Теперь можем получить собств. знач и искомое решение W
 
 ![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/2.png)
+
+код программы тут # rigde.py
