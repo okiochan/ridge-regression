@@ -11,3 +11,5 @@
 ![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/CodeCogsEqn(3).gif)
 
 Теперь обратная матрица сущ. Более того, С запрещает весам w иметь большие по модулю значения. 
+
+$Y=F(X)$
