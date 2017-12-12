@@ -18,11 +18,11 @@
 
 вычислим ее ков. матрицу
 
-/// 1
+![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/1.png)
 
 вычислим собственные значения. видим, что есть нулевые.
 
-...2
+![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/2.png)
 
 Разберемся с проблемой: зададим С, вычислим новую ков. мартицу
 
