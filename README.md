@@ -29,4 +29,4 @@ Cov2 = Cov + c * np.eye(n)
 
 ![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/2.png)
 
-код программы тут # rigde.py
+код программы тут **rigde.py**
