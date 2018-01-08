@@ -29,12 +29,12 @@ Cov2 = Cov + С * np.eye(n)
 
 ![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/2.png)
 
-код программы в ##rigde.py
+код программы в ## rigde.py
 
 Построим	график	зависимости	функционала	качества	от	параметра	регуляризации (линии - это полученные веса, взятые по модулю).
 Этот пример также показывает полезность применения регрессии Риджа к плохо обусловленным матрицам.
 
-выборки в файле **dataRidge.py, код в **ridge_graphic.py
+выборки в файле ** dataRidge.py, код в **ridge_graphic.py
 ```
 X, Y = dataRidge.DataBuilder().Build("ski")
 ```
