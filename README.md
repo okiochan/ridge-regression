@@ -22,11 +22,21 @@
 
 Разберемся с проблемой: зададим С, вычислим новую ков. мартицу
 ```
-c = 0.001
-Cov2 = Cov + c * np.eye(n)
+С = 0.001
+Cov2 = Cov + С * np.eye(n)
 ```
 Теперь можем получить собств. знач и искомое решение W
 
 ![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/2.png)
 
-код программы тут [rigde.py]( https://github.com/okiochan/ridge-regression/blob/master/rigde.py)
+код программы в **rigde.py
+
+Можно посмотреть, как в зависимости от выбранного коэф-та С в Ридж регрессии, регуляризируются данные. (линии - это полученные веса, взятые по модулю)
+Этот пример также показывает полезность применения регрессии Риджа к плохо обусловленным матрицам.
+
+выборки в файле **dataRidge.py, код в **ridge_graphic.py
+```
+X, Y = dataRidge.DataBuilder().Build("ski")
+```
+
+![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/r1.png)
