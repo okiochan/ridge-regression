@@ -40,3 +40,30 @@ X, Y = dataRidge.DataBuilder().Build("ski")
 ```
 
 ![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/img/r1.png)
+
+сравним Ридж регрессию с PCA
+
+Сначала оценим сколько компонент достаточно сохранить. В файле **pca.py** вызовем **ShowPercentage**, метод показывает, сколько процентов информации мы сохраним, если выберем 1 компоненту, 2 компоненты, 3 компоненты и так далее...
+
+мы видим, что при выборе 2х компонент, мы сохраним 100% инф. Разложим на эти 2 компоненты и получим для них решение. 
+
+```
+X_hat = pca.GetComponents(X,2)
+w_hat = solve_linreg(X_hat, Y)
+``` 
+
+Теперь сравним SSE для Ридж и PCA 
+
+```
+print("\n\nSSE for PCA")
+print(Quality(w_hat,X_hat, Y))
+print("\nSSE for Ridge")
+print(Quality(w, X, Y))
+```
+
+![](https://raw.githubusercontent.com/okiochan/ridge-regression/master/img/n1.png)
+
+Мы видим, что
+1) Ридж лучше (ошибка меньше)
+2) Ридж дешевле, так как PCA использует дорогостоющую операцию - сингулярное разложение
+
